@@ -1,2 +1,5 @@
 # for resolution conversion
 ffmpeg -i input.mp4 -vf "scale=1280:720" -c:a copy output.mp4
+
+# for mkv to mp4 conversion
+ffmpeg -i "input.mkv" -map 0 -c copy "output.mp4"
